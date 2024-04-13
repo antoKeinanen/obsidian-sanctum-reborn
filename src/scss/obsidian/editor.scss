@@ -35,15 +35,6 @@ body {
   border-radius: 0 var(--radius-s) var(--radius-s) 0;
 }
 
-/* Prevent active line highlighting from touching the ribbon */
-body:not(.is-mobile)
-  :is(
-    .markdown-source-view.mod-cm6 .cm-scroller,
-    .markdown-reading-view .markdown-preview-view
-  ) {
-  padding-left: var(--size-8);
-}
-
 /*	Emphasis
 ————————————————————————————————————————————————————————— */
 body {
