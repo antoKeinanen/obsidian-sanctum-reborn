@@ -17,8 +17,8 @@ body {
 
 .popover {
   box-shadow:
-    0px 0.5px 0.5px hsl(var(--shadow-color) / 0.43),
-    0px 1.5px 1.6px -1px hsl(var(--shadow-color) / 0.4),
-    0px 4px 4.2px -2px hsl(var(--shadow-color) / 0.36),
-    0px 10.1px 10.6px -3px hsl(var(--shadow-color) / 0.32);
+    0 0.5px 0.5px hsl(var(--shadow-color) / 43%),
+    0 1.5px 1.6px -1px hsl(var(--shadow-color) / 40%),
+    0 4px 4.2px -2px hsl(var(--shadow-color) / 36%),
+    0 10.1px 10.6px -3px hsl(var(--shadow-color) / 32%);
 }

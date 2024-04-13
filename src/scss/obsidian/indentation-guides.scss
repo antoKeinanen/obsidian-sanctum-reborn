@@ -2,11 +2,11 @@
 // @use 'variables/theme';
 
 /*	List Indentation Guides
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .theme-light,
 .theme-dark {
-  --indentation-guide: rgba(var(--mono-rgb-100), 0.15);
-  --indentation-guide-active: rgba(var(--mono-rgb-100), 0.3);
+  --indentation-guide: rgb(var(--mono-rgb-100) 0.15);
+  --indentation-guide-active: rgb(var(--mono-rgb-100) 0.3);
 }
 
 .markdown-rendered.show-indentation-guide li > ul::before,

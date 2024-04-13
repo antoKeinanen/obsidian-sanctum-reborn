@@ -16,28 +16,21 @@ body {
 body {
   --list-bullet-width-em-dash: 10px;
   --list-bullet-height-em-dash: 1.5px;
-
   --list-bullet-width-hyphen: 5px;
   --list-bullet-height-hyphen: 1.5px;
-
   --list-bullet-width-bullet-operator: 1px;
   --list-bullet-height-bullet-operator: 1px;
-
   --list-bullet-size-ring: 3px;
-
-  --list-bullet-width-triangle: 0px;
   --list-bullet-height-triangle: 0px;
-
   --list-bullet-border-triangle: 3px;
   --list-bullet-width-triangle: 6px;
-
   --checklist-done-decoration: line-through;
   --checklist-done-color: var(--text-faint);
   --checklist-done-strike-color: var(--text-faint);
 }
 
 /*	Task Lists
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 ul > li.task-list-item[data-task="x"] {
   text-decoration-color: var(--checklist-done-strike-color);
 }
@@ -48,14 +41,14 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 /*	Unordered List Markers
-—————————————————————————————————————————————————————————*/
-:is(body, .default-marker-odd) ul > li .list-bullet:after,//lvl1
-:is(body, .default-marker-odd) ol > li > ul > li .list-bullet:after,
-:is(body, .default-marker-odd) ul > li > ul > li> ul > li .list-bullet:after,//lvl3
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,//lvl5
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after,//lvl7
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet:after {
-  //lvl9
+————————————————————————————————————————————————————————— */
+:is(body, .default-marker-odd) ul > li .list-bullet::after,
+:is(body, .default-marker-odd) ol > li > ul > li .list-bullet::after,
+:is(body, .default-marker-odd) ul > li > ul > li> ul > li .list-bullet::after,
+:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,
+:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after {
+  // vl9
   --list-bullet-radius: 0;
 
   border: none;
@@ -65,13 +58,13 @@ ul > li.task-list-item[data-task="X"] {
   transform: var(--list-bullet-transform);
 }
 
-:is(body, .default-marker-even) ul > li > ul > li .list-bullet::after,//lvl2
+:is(body, .default-marker-even) ul > li > ul > li .list-bullet::after // vl2
 :is(body, .default-marker-even) ol > li > ul > li > ul > li .list-bullet::after,
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li .list-bullet::after,//lvl4
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,//lvl6
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,//lvl8
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl4
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl6
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl8
 :is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after {
-  //lvl 10
+  // vl 10
   --list-bullet-radius: 0;
 
   border: none;
@@ -82,7 +75,7 @@ ul > li.task-list-item[data-task="X"] {
 }
 
 /*	Ordered List Markers
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 ol,
 ol ol ol,
 ol ol ol ol ol,
@@ -100,9 +93,9 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Live Preview Unordered List Marker
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
-.markdown-source-view.mod-cm6 .list-bullet:after {
+.markdown-source-view.mod-cm6 .list-bullet::after {
   --list-bullet-radius: 50%;
 
   border-radius: var(--list-bullet-radius);
@@ -112,17 +105,19 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Style Settings Options
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 /*	Style Settings Options
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 .step-list-0 ol {
   list-style-type: none;
 }
+
 .step-list-0 ol {
   counter-reset: decimal;
 }
+
 .step-list-0 ol > li::before {
   content: "Step " counters(decimal, ".") ": ";
   counter-increment: decimal;
@@ -133,9 +128,11 @@ ol ol ol ol ol ol ol ol ol ol {
 .step-list-1 ol {
   list-style-type: none;
 }
+
 .step-list-1 ol {
   counter-reset: decimal;
 }
+
 .step-list-1 ol > li::before {
   content: counters(decimal, ".") ". ";
   counter-increment: decimal;
@@ -144,10 +141,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Hyphen
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-1 ul > li .list-bullet:after,
-.alternate-marker-odd-1 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-1 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-1 ul > li .list-bullet::after,
+.alternate-marker-odd-1 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-1 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-1
   ul
   > li
@@ -159,23 +156,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-1
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-1
   ul
   > li
@@ -191,11 +172,27 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-1
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after,
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-2 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-2 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-2
@@ -269,10 +266,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Bullet Operator
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-2 ul > li .list-bullet:after,
-.alternate-marker-odd-2 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-2 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-2 ul > li .list-bullet::after,
+.alternate-marker-odd-2 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-2 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-2
   ul
   > li
@@ -284,23 +281,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-2
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-2
   ul
   > li
@@ -316,11 +297,27 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-2
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after,
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-3 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-3 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-3
@@ -396,10 +393,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Square Bullet
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-3 ul > li .list-bullet:after,
-.alternate-marker-odd-3 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-3 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-3 ul > li .list-bullet::after,
+.alternate-marker-odd-3 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-3 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-3
   ul
   > li
@@ -411,23 +408,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-3
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-3
   ul
   > li
@@ -443,20 +424,36 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-3
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after {
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after {
   width: var(--list-bullet-size);
   height: var(--list-bullet-size);
 }
 
 /*	Bullet
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-4 ul > li .list-bullet:after,
-.alternate-marker-odd-4 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-4 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-4 ul > li .list-bullet::after,
+.alternate-marker-odd-4 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-4 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-4
   ul
   > li
@@ -468,23 +465,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-4
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-4
   ul
   > li
@@ -500,11 +481,27 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-4
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after,
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-4 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-4 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-4
@@ -578,10 +575,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Ring
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-5 ul > li .list-bullet:after,
-.alternate-marker-odd-5 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-5 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-5 ul > li .list-bullet::after,
+.alternate-marker-odd-5 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-5 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-5
   ul
   > li
@@ -593,23 +590,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-5
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-5
   ul
   > li
@@ -625,11 +606,27 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-5
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after,
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-5 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-5 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-5
@@ -705,10 +702,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Triangle
-—————————————————————————————————————————————————————————*/
-.alternate-marker-odd-6 ul > li .list-bullet:after,
-.alternate-marker-odd-6 ol > li > ul > li .list-bullet:after,
-.alternate-marker-odd-6 ul > li > ul > li > ul > li .list-bullet:after,
+————————————————————————————————————————————————————————— */
+.alternate-marker-odd-6 ul > li .list-bullet::after,
+.alternate-marker-odd-6 ol > li > ul > li .list-bullet::after,
+.alternate-marker-odd-6 ul > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-odd-6
   ul
   > li
@@ -720,23 +717,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
-  .list-bullet:after,
-.alternate-marker-odd-6
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  .list-bullet:after,
+  .list-bullet::after,
 .alternate-marker-odd-6
   ul
   > li
@@ -752,11 +733,27 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li
+  .list-bullet::after,
+.alternate-marker-odd-6
+  ul
+  > li
+  > ul
+  > li
   > ul
   > li
   > ul
   > li
-  .list-bullet:after,
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
 .alternate-marker-even-6 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-6 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-6
@@ -835,10 +832,10 @@ ol ol ol ol ol ol ol ol ol ol {
 }
 
 /*	Even Markers
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 /*	Em-Dash
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .alternate-marker-even-1 ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-1 ol > li > ul > li > ul > li .list-bullet::after,
 .alternate-marker-even-1
@@ -926,7 +923,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-even,
@@ -943,7 +940,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-even,
@@ -962,30 +959,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
-:is(
-    body,
-    .default-marker-even,
-    .alternate-marker-even-1,
-    .alternate-marker-even-2,
-    .alternate-marker-even-3,
-    .alternate-marker-even-4,
-    .alternate-marker-even-5,
-    .alternate-marker-even-6
-  )
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-even,
@@ -1007,12 +981,8 @@ ol ol ol ol ol ol ol ol ol ol {
   > ul
   > li
   > ul
-  > li
-  > ul
-  > li
-  > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-even,
@@ -1038,12 +1008,39 @@ ol ol ol ol ol ol ol ol ol ol {
   > ul
   > li
   > ul
+  > li.is-collapsed
+  .list-bullet::after,
+:is(
+    body,
+    .default-marker-even,
+    .alternate-marker-even-1,
+    .alternate-marker-even-2,
+    .alternate-marker-even-3,
+    .alternate-marker-even-4,
+    .alternate-marker-even-5,
+    .alternate-marker-even-6
+  )
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
   > li
   > ul
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-odd,
@@ -1056,7 +1053,7 @@ ol ol ol ol ol ol ol ol ol ol {
   )
   ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-odd,
@@ -1071,7 +1068,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-odd,
@@ -1088,28 +1085,7 @@ ol ol ol ol ol ol ol ol ol ol {
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after,
-:is(
-    body,
-    .default-marker-odd,
-    .alternate-marker-odd-1,
-    .alternate-marker-odd-2,
-    .alternate-marker-odd-3,
-    .alternate-marker-odd-4,
-    .alternate-marker-odd-5,
-    .alternate-marker-odd-6
-  )
-  ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li
-  > ul
-  > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-odd,
@@ -1129,12 +1105,8 @@ ol ol ol ol ol ol ol ol ol ol {
   > ul
   > li
   > ul
-  > li
-  > ul
-  > li
-  > ul
   > li.is-collapsed
-  .list-bullet:after,
+  .list-bullet::after,
 :is(
     body,
     .default-marker-odd,
@@ -1158,12 +1130,37 @@ ol ol ol ol ol ol ol ol ol ol {
   > ul
   > li
   > ul
+  > li.is-collapsed
+  .list-bullet::after,
+:is(
+    body,
+    .default-marker-odd,
+    .alternate-marker-odd-1,
+    .alternate-marker-odd-2,
+    .alternate-marker-odd-3,
+    .alternate-marker-odd-4,
+    .alternate-marker-odd-5,
+    .alternate-marker-odd-6
+  )
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
   > li
   > ul
   > li
   > ul
   > li.is-collapsed
-  .list-bullet:after {
+  .list-bullet::after {
   background-color: var(--list-marker-color-collapsed);
-  box-shadow: 0 0 0 4px rgba(var(--color-accent-rgb), 0.2);
+  box-shadow: 0 0 0 4px rgb(var(--color-accent-rgb) 0.2);
 }

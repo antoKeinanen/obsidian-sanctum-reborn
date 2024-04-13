@@ -15,8 +15,7 @@ body {
   --link-unresolved-opacity: 0.6;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: unset;
-  --link-unresolved-decoration-color: rgba(var(--interactive-accent-rgb), 0.6);
-
+  --link-unresolved-decoration-color: rgb(var(--interactive-accent-rgb) 0.6);
   --link-style: normal;
   --link-text-transform: none;
   --link-external-style: normal;

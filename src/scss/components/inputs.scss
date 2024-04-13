@@ -14,7 +14,7 @@ input[type="number"] {
   border-bottom-color: var(--border-strong-1);
   transition: all var(--duration-moderate-2) var(--motion-expressive-entrance);
 
-  &:hover:not(:focus):not(:focus-visible) {
+  &:hover:not(:focus, :focus-visible) {
     border-bottom-color: var(--background-modifier-border-focus);
     background-color: var(--field-hover-1);
 
@@ -22,18 +22,20 @@ input[type="number"] {
       color: var(--text-muted);
     }
   }
+
   &:focus-visible {
     box-shadow: none;
   }
+
   &:focus {
     box-shadow: none;
     border-color: var(--background-modifier-border);
     border-bottom-color: var(--background-modifier-border-focus);
 
     &:placeholder-shown {
-      //when starting to type, this will disappear
+      // hen starting to type, this will disappear
       box-shadow:
-        0 0 0 0px var(--background-primary),
+        0 0 0 0 var(--background-primary),
         0 0 0 2px var(--background-modifier-border-focus);
       border: none;
     }
@@ -45,6 +47,6 @@ input.prompt-input {
   padding: 24px;
 }
 
-div.search-input-container:before {
+div.search-input-container::before {
   background-color: var(--text-faint);
 }

@@ -7,13 +7,12 @@ body {
   --table-header-size: var(--font-smaller);
   --table-header-weight: var(--font-semibold);
   --table-header-color: var(--text-muted);
-
   --table-sticky-height: 600px;
-  --table-hover-highlight-color: rgba(var(--color-accent-rgb), 0.15);
+  --table-hover-highlight-color: rgb(var(--color-accent-rgb) 0.15);
 }
 
 /*	Preview / LP
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .cm-embed-block.markdown-rendered .block-language-dataview,
 .markdown-rendered table,
 .markdown-rendered .table-view-table {
@@ -25,7 +24,7 @@ body {
   & th,
   td {
     padding: 4px 8px 4px 16px;
-    border: none; //reset borders
+    border: none; // eset borders
 
     .table-single-rows & {
       overflow: hidden;
@@ -76,7 +75,7 @@ body {
   }
 
   & tbody tr {
-    //table body rows
+    // able body rows
     margin: 0;
 
     .table-alternate-row &:nth-child(odd) {
@@ -87,6 +86,7 @@ body {
     &:nth-child(even):hover {
       background-color: var(--table-hover-highlight-color);
     }
+
     .table-hover-row &:hover {
       background-color: transparent;
     }
@@ -101,6 +101,7 @@ body {
       border-top: 1px solid var(--border-subtle-1);
       border-bottom: 1px solid var(--border-subtle-1);
     }
+
     .table-sticky-headers.table-row-border & td {
       border-bottom: 1px solid var(--border-subtle-1);
     }
@@ -108,7 +109,7 @@ body {
 }
 
 /*	Row numbers
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .table-nums table {
   counter-reset: section;
 
@@ -133,7 +134,7 @@ body {
 }
 
 /*	Tabular figures
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .table-tabular-figures table {
   font-variant-numeric: tabular-nums;
 }

@@ -3,8 +3,8 @@
 
 body {
   --tab-background-active: var(--background-primary);
-  --tab-text-color: var(--text-faint); //tabs in background (when in other app)
-  --tab-text-color-focused: var(--text-faint); //secondary tabs
+  --tab-text-color: var(--text-faint); // abs in background (when in other app)
+  --tab-text-color-focused: var(--text-faint); // econdary tabs
   --tab-text-color-focused-active: var(--text-normal);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;
@@ -15,7 +15,6 @@ body {
   --tab-curve: 0px;
   --tab-radius: var(--radius-s);
   --tab-radius-active: 6px 6px 0 0;
-
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary-alt);
   --titlebar-border-width: 0px;
@@ -45,11 +44,11 @@ body {
   .workspace-tab-container
   .workspace-tab-header {
   box-shadow:
-    -0.5px 0 0.4px hsl(var(--shadow-color) / 0.47),
-    -0.8px 0 0.7px -1px hsl(var(--shadow-color) / 0.4),
-    -1.9px 0px 1.7px -2px hsl(var(--shadow-color) / 0.32),
-    -4.5px 0px 4px -3px hsl(var(--shadow-color) / 0.25),
-    -9.4px 0 8.4px -4.1px hsl(var(--shadow-color) / 0.18);
+    -0.5px 0 0.4px hsl(var(--shadow-color) / 47%),
+    -0.8px 0 0.7px -1px hsl(var(--shadow-color) / 40%),
+    -1.9px 0 1.7px -2px hsl(var(--shadow-color) / 32%),
+    -4.5px 0 4px -3px hsl(var(--shadow-color) / 25%),
+    -9.4px 0 8.4px -4.1px hsl(var(--shadow-color) / 18%);
 
   .theme-light & {
     --shadow-color: 60deg 5% 59%;

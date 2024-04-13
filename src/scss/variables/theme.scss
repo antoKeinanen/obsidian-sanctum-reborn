@@ -6,81 +6,62 @@ body {
 }
 
 /*	Sanctum Light Themes (Default, Contrast & White)
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 .theme-light,
 .theme-light.sanctum-default-light,
 .theme-light.sanctum-contrast-light,
 .theme-light.sanctum-white {
   --color-accent-rgb: var(--color-accent-rgb-l);
-
   --background: rgb(var(--gray-10));
-  --background-hover: rgba(var(--gray-50), 0.12);
-  --background-active: rgba(var(--gray-50), 0.32);
-  --background-selected: rgba(var(--gray-50), 0.2);
-  --background-selected-hover: rgba(var(--gray-50), 0.32);
-
+  --background-hover: rgb(var(--gray-50) 0.12);
+  --background-active: rgb(var(--gray-50) 0.32);
+  --background-selected: rgb(var(--gray-50) 0.2);
+  --background-selected-hover: rgb(var(--gray-50) 0.32);
   --background-inverse: rgb(var(--gray-80));
-  --background-inverse-hover: rgba(var(--gray-70), 0.5);
-
+  --background-inverse-hover: rgb(var(--gray-70) 0.5);
   --layer-1: rgb(var(--white));
   --layer-2: rgb(var(--gray-10));
-
   --layer-hover-1: rgb(var(--gray-10));
-  --layer-hover-2: rgba(var(--gray-20), 0.5);
-
+  --layer-hover-2: rgb(var(--gray-20) 0.5);
   --layer-active-1: rgb(var(--gray-30));
   --layer-active-2: rgb(var(--gray-30));
-
   --layer-selected-1: rgb(var(--gray-20));
   --layer-selected-2: rgb(var(--gray-20));
-
-  --layer-selected-hover-1: rgba(var(--gray-30), 0.5);
-  --layer-selected-hover-2: rgba(var(--gray-30), 0.5);
-
+  --layer-selected-hover-1: rgb(var(--gray-30) 0.5);
+  --layer-selected-hover-2: rgb(var(--gray-30) 0.5);
   --field-1: rgb(var(--white));
   --field-hover-1: rgb(var(--gray-20));
-
-  --border-subtle-0: rgb(var(--gray-20)); //paired with background
-  --border-subtle-1: rgb(var(--gray-20)); //paired with layer-1
-  --border-subtle-2: rgb(var(--gray-20)); //paired with layer-2
-
+  --border-subtle-0: rgb(var(--gray-20)); // aired with background
+  --border-subtle-1: rgb(var(--gray-20)); // aired with layer-1
+  --border-subtle-2: rgb(var(--gray-20)); // aired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-30));
   --border-subtle-selected-2: rgb(var(--gray-30));
-
-  --border-strong-1: rgb(var(--gray-50)); //for input fields
+  --border-strong-1: rgb(var(--gray-50)); // or input fields
   --border-strong-2: rgb(var(--gray-50));
-
   --border-inverse: rgb(var(--gray-100));
-
   --text-code: var(--pink-60);
   --text-primary: rgb(var(--gray-100));
   --text-secondary: rgb(var(--gray-70));
   --text-placeholder: rgb(var(--gray-40));
-
   --icon-primary: rgb(var(--gray-100));
   --icon-secondary: rgb(var(--gray-70));
   --icon-on-color: rgb(var(--white));
   --icon-inverse: rgb(var(--white));
-
   --focus: var(--cyan-60);
   --focus-inset: rgb(var(--white));
   --focus-inverse: rgb(var(--white));
-
   --interactive: rgb(var(--color-accent-rgb));
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-  --overlay: rgba(var(--gray-100), 0.5); //background overlay
+  --highlight: rgb(var(--color-accent-rgb) 0.7);
+  --overlay: rgb(var(--gray-100) 0.5); // ackground overlay
 }
 
 .theme-light.sanctum-white {
   --background: rgb(var(--white));
   --layer-1: rgb(var(--gray-10));
   --layer-2: rgb(var(--white));
-
-  --layer-hover-1: rgba(var(--gray-20), 0.5);
-
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-
+  --layer-hover-1: rgb(var(--gray-20) 0.5);
+  --highlight: rgb(var(--color-accent-rgb) 0.7);
   --field-1: rgb(var(--gray-10));
   --field-hover-1: rgb(var(--white));
 }
@@ -90,70 +71,54 @@ body {
 }
 
 /*	Sanctum Dark Themes (Default, Contrast Dark & Black)
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 .theme-dark,
 .theme-dark.sanctum-default-dark,
 .theme-dark.sanctum-contrast-dark,
 .theme-dark.sanctum-black {
   --color-accent-rgb: var(--color-accent-rgb-d);
-
   --background: rgb(var(--gray-100));
-  --background-hover: rgba(var(--gray-50), 0.16);
-  --background-active: rgba(var(--gray-50), 0.4);
-  --background-selected: rgba(var(--gray-50), 0.24);
-  --background-selected-hover: rgba(var(--gray-50), 0.32);
-
+  --background-hover: rgb(var(--gray-50) 0.16);
+  --background-active: rgb(var(--gray-50) 0.4);
+  --background-selected: rgb(var(--gray-50) 0.24);
+  --background-selected-hover: rgb(var(--gray-50) 0.32);
   --background-inverse: rgb(var(--gray-10));
-  --background-inverse-hover: rgba(var(--gray-20), 0.5);
-
+  --background-inverse-hover: rgb(var(--gray-20) 0.5);
   --layer-1: rgb(var(--gray-90));
   --layer-2: rgb(var(--gray-80));
-
-  --layer-hover-1: rgba(var(--gray-80), 0.5);
-  --layer-hover-2: rgba(var(--gray-70), 0.5);
-
+  --layer-hover-1: rgb(var(--gray-80) 0.5);
+  --layer-hover-2: rgb(var(--gray-70) 0.5);
   --layer-active-1: rgb(var(--gray-70));
   --layer-active-2: rgb(var(--gray-60));
-
   --layer-selected-1: rgb(var(--gray-80));
   --layer-selected-2: rgb(var(--gray-70));
-
-  --layer-selected-hover-1: rgba(var(--gray-70), 0.5);
-  --layer-selected-hover-2: rgba(var(--gray-60), 0.5);
-
+  --layer-selected-hover-1: rgb(var(--gray-70) 0.5);
+  --layer-selected-hover-2: rgb(var(--gray-60) 0.5);
   --field-1: rgb(var(--gray-90));
   --field-hover-1: rgb(var(--gray-80));
-
-  --border-subtle-0: rgb(var(--gray-80)); //paired with background
-  --border-subtle-1: rgb(var(--gray-80)); //paired with layer-1
-  --border-subtle-2: rgb(var(--gray-70)); //paired with layer-2
-
+  --border-subtle-0: rgb(var(--gray-80)); // aired with background
+  --border-subtle-1: rgb(var(--gray-80)); // aired with layer-1
+  --border-subtle-2: rgb(var(--gray-70)); // aired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-70));
   --border-subtle-selected-2: rgb(var(--gray-60));
-
-  --border-strong-1: rgb(var(--gray-60)); //for input fields
+  --border-strong-1: rgb(var(--gray-60)); // or input fields
   --border-strong-2: rgb(var(--gray-50));
-
   --border-inverse: rgb(var(--gray-10));
-
   --text-code: var(--pink-50);
   --text-primary: rgb(var(--gray-10));
   --text-secondary: rgb(var(--gray-30));
   --text-placeholder: rgb(var(--gray-60));
-
   --icon-primary: rgb(var(--gray-10));
   --icon-secondary: rgb(var(--gray-30));
   --icon-on-color: rgb(var(--white));
   --icon-inverse: rgb(var(--gray-100));
-
   --focus: var(--cyan-60);
   --focus-inset: rgb(var(--gray-100));
   --focus-inverse: rgb(var(--white));
-
   --interactive: rgb(var(--color-accent-rgb));
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
-  --overlay: rgba(var(--gray-100), 0.7); //background overlay
+  --highlight: rgb(var(--color-accent-rgb) 0.7);
+  --overlay: rgb(var(--gray-100) 0.7); // ackground overlay
 }
 
 .theme-dark.sanctum-contrast-dark {
@@ -179,14 +144,14 @@ body {
   // --field-1: rgb(var(--gray-80));
   // --field-hover-1: rgb(var(--gray-70));
 
-  // --border-subtle-0: rgb(var(--gray-70)); //paired with background
-  // --border-subtle-1: rgb(var(--gray-70)); //paired with layer-1
-  // --border-subtle-2: rgb(var(--gray-60)); //paired with layer-2
+  // --border-subtle-0: rgb(var(--gray-70)); // aired with background
+  // --border-subtle-1: rgb(var(--gray-70)); // aired with layer-1
+  // --border-subtle-2: rgb(var(--gray-60)); // aired with layer-2
 
   // --border-subtle-selected-1: rgb(var(--gray-60));
   // --border-subtle-selected-2: rgb(var(--gray-50));
 
-  // --border-strong-1: rgb(var(--gray-50)); //for input fields
+  // --border-strong-1: rgb(var(--gray-50)); // or input fields
   // --border-strong-2: rgb(var(--gray-40));
 
   // --border-inverse: rgb(var(--gray-10));
@@ -194,112 +159,97 @@ body {
 
 .theme-dark.sanctum-black {
   --background: rgb(var(--black));
-
   --layer-1: rgb(var(--gray-100));
   --layer-2: rgb(var(--gray-80));
-
-  --layer-hover-1: rgba(var(--gray-90), 0.5);
-  --layer-hover-2: rgba(var(--gray-80), 0.5);
-
+  --layer-hover-1: rgb(var(--gray-90) 0.5);
+  --layer-hover-2: rgb(var(--gray-80) 0.5);
   --layer-active-1: rgb(var(--gray-80));
   --layer-active-2: rgb(var(--gray-70));
-
   --layer-selected-1: rgb(var(--gray-90));
   --layer-selected-2: rgb(var(--gray-80));
-
-  --layer-selected-hover-1: rgba(var(--gray-80), 0.5);
-  --layer-selected-hover-2: rgba(var(--gray-70), 0.5);
-
+  --layer-selected-hover-1: rgb(var(--gray-80) 0.5);
+  --layer-selected-hover-2: rgb(var(--gray-70) 0.5);
   --field-1: rgb(var(--gray-100));
   --field-hover-1: rgb(var(--gray-90));
-
-  --border-subtle-0: rgb(var(--gray-90)); //paired with background
-  --border-subtle-1: rgb(var(--gray-90)); //paired with layer-1
-  --border-subtle-2: rgb(var(--gray-80)); //paired with layer-2
-
+  --border-subtle-0: rgb(var(--gray-90)); // aired with background
+  --border-subtle-1: rgb(var(--gray-90)); // aired with layer-1
+  --border-subtle-2: rgb(var(--gray-80)); // aired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-80));
   --border-subtle-selected-2: rgb(var(--gray-70));
-
   --border-strong-1: rgb(var(--gray-70));
   --border-strong-2: rgb(var(--gray-60));
-
   --text-code: var(--pink-60);
   --text-primary: rgb(var(--gray-30));
   --text-secondary: rgb(var(--gray-50));
   --text-placeholder: rgb(var(--gray-80));
-
-  --highlight: rgba(var(--color-accent-rgb), 0.7);
+  --highlight: rgb(var(--color-accent-rgb) 0.7);
 }
 
 /*	General Theme Styling
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 .theme-light,
 .theme-dark {
   --color-red-rgb: 197, 65, 40;
   --color-green-rgb: 102, 153, 97;
   --color-yellow-rgb: 243, 189, 79;
-
   --text-highlight-bg: var(--highlight);
   --text-highlight-bg-active: var(--highlight);
-
-  --color-accent: var(--interactive); //links, footnotes and tags
+  --color-accent: var(--interactive); // inks, footnotes and tags
   --color-accent-1: var(
     --interactive
-  ); //cta buttons, active settings tabs, components, resize handles
-  --color-accent-2: var(--interactive); //accent color on hover
+  ); // ta buttons, active settings tabs, components, resize handles
 
-  --background-primary: var(--background); //note background
-  --background-primary-alt: var(--layer-1); //code blocks, blockquotes, yaml
-  --background-secondary: var(--background); //workspace except note
+  --color-accent-2: var(--interactive); // ccent color on hover
+  --background-primary: var(--background); // ote background
+  --background-primary-alt: var(--layer-1); // ode blocks, blockquotes, yaml
+  --background-secondary: var(--background); // orkspace except note
   --background-secondary-alt: var(
     --background
   ); // tab-header (top bar) & titlebar
 
   --background-modifier-hover: var(
     --background-hover
-  ); //active Tab Headers and Nav File
-  --background-modifier-active-hover: rgba(
-    var(--color-accent-rgb),
+  ); // ctive Tab Headers and Nav File
+
+  --background-modifier-active-hover: rgb(
+    var(--color-accent-rgb)
     0.15
-  ); //collapsed lists indicator
-  --background-modifier-border: var(--border-subtle-0); //borders
+  ); // ollapsed lists indicator
+
+  --background-modifier-border: var(--border-subtle-0); // orders
   --background-modifier-border-hover: var(
     --border-subtle-1
-  ); //component details and borders
-  --background-modifier-border-focus: var(--focus); //element/component focus
+  ); // omponent details and borders
 
+  --background-modifier-border-focus: var(--focus); // lement/component focus
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--red);
   --background-modifier-error-hover: var(--red);
-
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--green);
-
-  --background-modifier-message: var(--layer-1); //notice & tooltip color
-
-  --background-modifier-form-field: var(--field-1); //text inputs
-
-  --text-normal: var(--text-primary); //main note text
+  --background-modifier-message: var(--layer-1); // otice & tooltip color
+  --background-modifier-form-field: var(--field-1); // ext inputs
+  --text-normal: var(--text-primary); // ain note text
   --text-muted: var(--text-secondary); // :not(:active) icons and sidebar text
   --text-faint: var(
     --text-placeholder
   ); // comments, collapse indicators & markers, input placeholders, settings group titles
 
-  --text-on-accent: rgb(var(--white)); //text of active/alert areas
+  --text-on-accent: rgb(var(--white)); // ext of active/alert areas
   --text-error: var(--red);
   --text-success: var(--green);
-  --text-selection: rgba(var(--color-accent-rgb), 0.5); // selection color
+  --text-selection: rgb(var(--color-accent-rgb) 0.5); // selection color
 }
 
 body {
   /*	Radii
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
   --radius-s: 4px;
   --radius-m: 8px;
   --radius-l: 10px;
 
   /*	Native Accent color
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
   --accent-h: 24.4;
   --accent-s: 90.8%;
   --accent-l: 61.8%;

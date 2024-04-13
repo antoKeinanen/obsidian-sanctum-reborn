@@ -2,7 +2,7 @@
 
 .theme-dark .markdown-rendered img:not(:hover),
 .theme-dark .workspace-leaf-content img:not(:hover) {
-  opacity: 70%;
+  opacity: 0.7;
   transition: opacity var(--duration-slow-2) var(--motion-entrance-expressive);
 }
 
@@ -27,55 +27,76 @@
 
   &[alt~="-xs"] {
     --width: var(--xs);
+
     width: var(--width);
   }
+
   &[alt~="-s"] {
     --width: var(--s);
+
     width: var(--width);
   }
+
   &[alt~="-m"] {
     --width: var(--m);
+
     width: var(--width);
   }
+
   &[alt~="-l"] {
     --width: var(--l);
+
     width: var(--width);
   }
+
   &[alt~="-xl"] {
     --width: var(--xl);
+
     min-width: var(--width);
   }
+
   &[alt~="-xxl"] {
     --width: var(--xxl);
+
     min-width: var(--width);
   }
+
   &[alt~="+"] {
     --move: -10%;
   }
+
   &[alt~="++"] {
     --move: -20%;
   }
+
   &[alt~="+++"] {
     --move: -30%;
   }
+
   &[alt~="++++"] {
     --move: -40%;
   }
+
   &[alt~="+++++"] {
     --move: -50%;
   }
+
   &[alt~="-"] {
     --move: 10%;
   }
+
   &[alt~="--"] {
     --move: 20%;
   }
+
   &[alt~="---"] {
     --move: 30%;
   }
+
   &[alt~="----"] {
     --move: 40%;
   }
+
   &[alt~="-----"] {
     --move: 50%;
   }
@@ -83,27 +104,18 @@
   &[alt*="left"] {
     float: left;
     clear: left;
-    margin-right: 1rem;
-    margin-left: calc(-50% + var(--move));
-    margin-bottom: 4px;
-    margin-top: 16px;
+    margin: 16px 1rem 4px calc(-50% + var(--move));
   }
 
   &[alt*="right"] {
     float: right;
     clear: right;
-    margin-left: 1rem;
-    margin-right: calc(-50% + var(--move));
-    margin-bottom: 4px;
-    margin-top: 16px;
+    margin: 16px calc(-50% + var(--move)) 4px 1rem;
   }
 
   &[alt*="center"],
   &[alt*="centre"] {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 4px;
-    margin-top: 16px;
+    margin: 16px auto 4px;
   }
 }

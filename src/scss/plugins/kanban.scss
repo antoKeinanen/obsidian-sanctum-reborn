@@ -33,10 +33,12 @@
       color: var(--text-muted);
     }
   }
+
   .kanban-plugin__lane-title {
     font-size: var(--font-ui-medium);
     font-weight: var(--font-medium);
   }
+
   div.kanban-plugin__lane-title-count {
     border-radius: var(--radius-s);
     font-size: var(--font-ui-smaller);
@@ -81,6 +83,7 @@
   a.tag:not(.kanban-plugin__item-tag) {
     display: none;
   }
+
   .kanban-plugin__item-tag {
     padding: 2px 4px;
     border: 1px solid var(--interactive);
@@ -130,7 +133,7 @@ button.kanban-plugin__new-item-button {
 }
 
 /*	Fix for title bar and tab header
-—————————————————————————————————————————————————————————*/
+————————————————————————————————————————————————————————— */
 
 body:is(.is-focused, :not(.is-focused))
   .workspace-leaf-content[data-type="kanban"]
@@ -145,6 +148,7 @@ body:is(.is-focused, :not(.is-focused))
       background: none;
     }
   }
+
   .view-actions {
     position: unset;
     margin-top: unset;

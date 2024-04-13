@@ -19,6 +19,7 @@ select,
     background-color: var(--layer-hover-1);
     box-shadow: var(--input-shadow-hover);
   }
+
   &:focus-visible {
     box-shadow: 0 0 0 2px var(--background-modifier-border-focus);
   }

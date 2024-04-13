@@ -5,11 +5,11 @@
 .pickr .pcr-button::before,
 .pickr .pcr-button::after {
   border-radius: 100vmax;
-  box-shadow: inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25);
+  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100) 0.25);
 
   &:hover {
     box-shadow:
-      inset 0 0 0 1px rgba(var(--mono-rgb-100), 0.25),
+      inset 0 0 0 1px rgb(var(--mono-rgb-100) 0.25),
       0 0 0 3px var(--background-modifier-hover);
   }
 }
@@ -28,40 +28,41 @@
 .pcr-app[data-theme="nano"] .pcr-selection .pcr-color-preview {
   justify-content: flex-start;
 }
+
 .pcr-app[data-theme="nano"] .pcr-swatches {
   margin: 0;
 }
 
 .pcr-app[data-theme="nano"] .pcr-interaction {
   .pcr-result {
-    //color value
+    // olor value
     grid-area: result;
     margin: 0;
   }
 
   .pcr-type[data-type="RGBA"] {
-    //color format
+    // olor format
     grid-area: type-1;
     margin: 0;
     font-family: var(--font-interface);
   }
 
   .pcr-type[data-type="HEXA"] {
-    //color format
+    // olor format
     grid-area: type-2;
     margin: 0;
     font-family: var(--font-interface);
   }
 
   .pcr-type[data-type="HSLA"] {
-    //color format
+    // olor format
     grid-area: type-3;
     margin: 0;
     font-family: var(--font-interface);
   }
 
   .pcr-save {
-    //save button
+    // ave button
     grid-area: save;
     margin: 0;
     text-transform: capitalize;
@@ -75,12 +76,7 @@
   }
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template: "result result result" 1fr "type-1 type-2 type-3" 1fr "save save cancel" 1fr / 1fr 1fr 1fr;
   align-items: center;
   gap: 4px;
-  grid-template-areas:
-    "result result result"
-    "type-1 type-2 type-3"
-    "save save cancel";
 }
