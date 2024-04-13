@@ -59,7 +59,7 @@
 - [s] Money
 ```
 
-<p align=center><img src="https://user-images.githubusercontent.com/91087143/139735135-9bb582f5-d657-4017-b162-d11e6ee674b8.png" alt="Custom Checkboxes" width=35%></p>
+<p align=center><img src="https://github.com/antoKeinanen/obsidian-sanctum/blob/main/assets/icons.png" alt="Custom Checkboxes" width=35%></p>
 
 5. **Custom Codeblock Language - `pure-text`:** for when you have a passage you'd like to constantly copy, for some reason. This makes the codeblock appear like normal text, except it has a copy button to the right.
 
