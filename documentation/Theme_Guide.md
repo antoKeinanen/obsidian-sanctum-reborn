@@ -26,29 +26,40 @@
 4. **Custom Checkboxes:** Besides the regular checkbox, there are 7 custom checkboxes you may use on your tasks/lists. Do note that these do not work on tables, since tables only accept the default html checkboxes (which you can input via markdown syntax, or even html syntax). These default html checkboxes are also styled to match the theme. Eg: `<input type="checkbox">`
 
 ```
-- [i] Information
+- [*] Star
+- [a] Reminder
+- [f] Favorite
+- [S] Savings
 - [-] Cancelled
+- [>] Rescheduled
 - [<] Scheduled
-- [>] Rescheduled/Forwarded
-- [?] Question
-- [!] Important
 - [l] Location
-- [x] Task
-- [ ] Task
-- [X] Task
-- [I] Idea
-- [p] Thumbs up
-- [c] Thumbs down
-- [S] Piggy bank
-- [s] Money
-- [a] Bell
-- [b] Bookmark
-- [n] Pin
 - [B] Bug
-- [W] Reward
+- [X] Failure
+- [n] Annotation
+- [p] Pros
+- [c] Cons
+- [w] Win
+- [b] Bookmark
+- [I] Idea
+- [!] Warning
+- [?] Question
+- [i] Info
+- [/] In Progress
+- [u] Trend Up
+- [d] Trend Down
+- [F] Feature
+- [r] Law
+- [m] Measurement
+- [M] Medical
+- [L] Language
+- [t] Time
+- [T] Call
+- [P] Person
+- [s] Money
 ```
 
-<p align=center><img src="https://user-images.githubusercontent.com/91087143/139735135-9bb582f5-d657-4017-b162-d11e6ee674b8.png" alt="Custom Checkboxes" width=35%></p>
+<p align=center><img src="https://github.com/antoKeinanen/obsidian-sanctum/blob/main/assets/icons.png" alt="Custom Checkboxes" width=35%></p>
 
 5. **Custom Codeblock Language - `pure-text`:** for when you have a passage you'd like to constantly copy, for some reason. This makes the codeblock appear like normal text, except it has a copy button to the right.
 
