@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "webpack --watch --mode development --config webpack.dev.js",
     "build": "webpack --mode production --config webpack.prod.js",
-    "version": "node version-bump.mjs && git add manifest.json versions.json"
+    "version": "node version-bump.mjs && git add manifest.json versions.json",
+    "format": "prettier . --write"
   },
   "keywords": [
     "obsidianmd"
