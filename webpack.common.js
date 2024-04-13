@@ -28,7 +28,10 @@ module.exports = {
       },
     ],
   },
-  plugins: [new FixStyleOnlyEntriesPlugin(), new MiniCssExtractPlugin({
-    filename: "sanctum.css"
-  })],
+  plugins: [
+    new FixStyleOnlyEntriesPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "sanctum.css",
+    }),
+  ],
 };

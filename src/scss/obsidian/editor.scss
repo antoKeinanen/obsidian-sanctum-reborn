@@ -5,76 +5,74 @@
 —————————————————————————————————————————————————————————*/
 
 .markdown-source-view.mod-cm6 .cm-gutters {
-	padding-right: 0;
+  padding-right: 0;
 
-	& .cm-lineNumbers .cm-gutterElement {
-		min-width: 24px;
-	}
+  & .cm-lineNumbers .cm-gutterElement {
+    min-width: 24px;
+  }
 
-	& .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
-		padding-right: 24px;
-		opacity: 0.5;
-	}
-	& .cm-lineNumbers .cm-gutterElement.cm-active {
-		padding-right: 24px;
-		color: var(--text-muted);
-		border-radius: var(--radius-s) 0 0 var(--radius-s);
-	}
+  & .cm-lineNumbers .cm-gutterElement:not(.cm-active) {
+    padding-right: 24px;
+    opacity: 0.5;
+  }
+  & .cm-lineNumbers .cm-gutterElement.cm-active {
+    padding-right: 24px;
+    color: var(--text-muted);
+    border-radius: var(--radius-s) 0 0 var(--radius-s);
+  }
 }
-
 
 /*	Active Line Highlighting
 —————————————————————————————————————————————————————————*/
 
 body {
-	--active-line-accent: transparent;
+  --active-line-accent: transparent;
 }
 
 .markdown-source-view.mod-cm6 .cm-active:not(.HyperMD-codeblock) {
-	background-color: var(--active-line-accent);
-	border-radius: 0 var(--radius-s) var(--radius-s) 0;
+  background-color: var(--active-line-accent);
+  border-radius: 0 var(--radius-s) var(--radius-s) 0;
 }
 
 /* Prevent active line highlighting from touching the ribbon*/
-body:not(.is-mobile) :is(
-	.markdown-source-view.mod-cm6 .cm-scroller,
-	.markdown-reading-view .markdown-preview-view) {
-	padding-left: var(--size-8);
+body:not(.is-mobile)
+  :is(
+    .markdown-source-view.mod-cm6 .cm-scroller,
+    .markdown-reading-view .markdown-preview-view
+  ) {
+  padding-left: var(--size-8);
 }
-
 
 /*	Emphasis
 —————————————————————————————————————————————————————————*/
 body {
-/* Bold */
-	--bold-weight: var(--font-semibold);
-	--bold-color: inherit;
+  /* Bold */
+  --bold-weight: var(--font-semibold);
+  --bold-color: inherit;
 
-/* Italic */
-	--italic-color: inherit;
+  /* Italic */
+  --italic-color: inherit;
 }
 
 /* Highlight */
 .search-result-file-matched-text, //search results
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight {
-	padding: 2px 4px;
-	border-radius: var(--radius-s);
-	-webkit-box-decoration-break: clone;
-	box-decoration-break: clone;
+  padding: 2px 4px;
+  border-radius: var(--radius-s);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
-
 
 /*	Horizontal Rule
 —————————————————————————————————————————————————————————*/
 body {
-	--hr-color: var(--background-modifier-border);
-	--hr-thickness: 1.5px;
+  --hr-color: var(--background-modifier-border);
+  --hr-thickness: 1.5px;
 }
-
 
 /*	Readable line length
 —————————————————————————————————————————————————————————*/
 body {
-	--file-line-width: 40rem;
+  --file-line-width: 40rem;
 }
