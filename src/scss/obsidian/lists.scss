@@ -44,10 +44,55 @@ ul > li.task-list-item[data-task="X"] {
 ————————————————————————————————————————————————————————— */
 :is(body, .default-marker-odd) ul > li .list-bullet::after,
 :is(body, .default-marker-odd) ol > li > ul > li .list-bullet::after,
-:is(body, .default-marker-odd) ul > li > ul > li> ul > li .list-bullet::after,
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,
-:is(body, .default-marker-odd) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after {
+:is(body, .default-marker-odd) ul > li > ul > li > ul > li .list-bullet::after,
+:is(body, .default-marker-odd)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
+:is(body, .default-marker-odd)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after,
+:is(body, .default-marker-odd)
+  ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  > ul
+  > li
+  .list-bullet::after {
   // vl9
   --list-bullet-radius: 0;
 

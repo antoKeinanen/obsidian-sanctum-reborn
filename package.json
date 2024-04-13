@@ -8,7 +8,9 @@
     "build": "prettier --check . && stylelint --allow-empty-input \"**/*.{css,scss}\" && webpack --mode production --config webpack.prod.js",
     "version": "node version-bump.mjs && git add manifest.json versions.json",
     "lint": "stylelint --allow-empty-input \"**/*.{css,scss}\" --fix",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "prepare": "husky",
+    "pre-commit": "lint-staged"
   },
   "keywords": [
     "obsidianmd"
@@ -18,7 +20,10 @@
   "devDependencies": {
     "css-loader": "^7.1.1",
     "dotenv": "^16.0.1",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "mini-css-extract-plugin": "^2.8.1",
+    "prettier": "^3.2.5",
     "sass": "^1.75.0",
     "sass-loader": "^14.2.0",
     "stylelint": "^16.3.1",

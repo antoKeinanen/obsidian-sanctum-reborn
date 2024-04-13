@@ -14,7 +14,12 @@
 }
 
 .markdown-source-view.mod-cm6
-  .cm-line:not(.cm-active, .HyperMD-task-line, .HyperMD-header, .HyperMD-list-line-1)
+  .cm-line:not(
+    .cm-active,
+    .HyperMD-task-line,
+    .HyperMD-header,
+    .HyperMD-list-line-1
+  )
   .cm-fold-indicator
   .collapse-indicator {
   padding-right: 14px;

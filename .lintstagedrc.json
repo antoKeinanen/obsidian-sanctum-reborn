@@ -1,0 +1,4 @@
+{
+  "*.scss": ["prettier --write --check", "stylelint --fix"],
+  "*.css": ["prettier --write --check", "stylelint --fix"]
+}

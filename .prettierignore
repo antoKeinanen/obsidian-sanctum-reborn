@@ -4,3 +4,4 @@ dist
 .prettierignore
 .stylelintignore
 .eslintignore
+pnpm-lock.yaml
