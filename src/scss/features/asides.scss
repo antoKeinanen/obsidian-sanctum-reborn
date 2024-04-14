@@ -55,11 +55,15 @@ body {
     border-radius: var(--callout-radius);
   }
 
-  .callout-title {
+  & > .callout-title {
     display: none;
   }
 
   .callout-content {
+    padding: 0 0 0 12px;
+  }
+
+  & > .callout-content {
     padding: 0;
 
     & > p {
