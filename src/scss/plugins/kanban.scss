@@ -16,6 +16,15 @@
   border-radius: var(--radius-m);
   background-color: transparent;
   border: none;
+
+  .kanban-plugin__item-input-wrapper {
+    border: none;
+  }
+
+  .kanban-plugin__item-input {
+    border-radius: var(--radius-m);
+    padding: 2px 8px;
+  }
 }
 
 .kanban-plugin__lane-header-wrapper {
@@ -68,6 +77,13 @@
 }
 
 .kanban-plugin__item-button-wrapper {
+  background-color: var(--background-secondary);
+  border-radius: 0 0 var(--radius-m) var(--radius-m);
+  border: 1px solid var(--background-modifier-border);
+}
+
+// Should be identical to above 'kanban-plugin__item-button-wrapper'
+.kanban-plugin__item-form {
   background-color: var(--background-secondary);
   border-radius: 0 0 var(--radius-m) var(--radius-m);
   border: 1px solid var(--background-modifier-border);
