@@ -32,8 +32,8 @@ input[type="range"] {
     top: var(--slider-thumb-y);
     transition: all 0.1s linear;
     box-shadow:
-      0 1px 1px 0 rgb(0 0 0 / 5%),
-      0 2px 2px 0 rgb(0 0 0 / 10%);
+      0 1px 1px 0 rgba(0, 0, 0, 5%),
+      0 2px 2px 0 rgba(0, 0, 0, 10%);
   }
 
   &::-webkit-slider-thumb:hover,
@@ -50,8 +50,8 @@ input[type="range"] {
     border-width: 2px;
     border-color: var(--background-modifier-border-focus);
     box-shadow:
-      0 1px 2px 0 rgb(0 0 0 / 5%),
-      0 2px 3px 0 rgb(0 0 0 / 20%),
+      0 1px 2px 0 rgba(0, 0, 0, 5%),
+      0 2px 3px 0 rgba(0, 0, 0, 20%),
       0 0 0 1px var(--focus-inset),
       0 0 0 3px var(--background-modifier-border-focus);
   }

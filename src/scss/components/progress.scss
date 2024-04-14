@@ -85,7 +85,7 @@
   background-color: var(--green);
 }
 
-.markdown-source-view.is-live-preview progress:not([value]), // ndeterminate (no value) progress
+.markdown-source-view.is-live-preview progress:not([value]), // Indeterminate (no value) progress
 .markdown-preview-view progress:not([value]) {
   background-color: var(--background-active);
   border-radius: 3px;

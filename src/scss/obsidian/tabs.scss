@@ -3,8 +3,8 @@
 
 body {
   --tab-background-active: var(--background-primary);
-  --tab-text-color: var(--text-faint); // abs in background (when in other app)
-  --tab-text-color-focused: var(--text-faint); // econdary tabs
+  --tab-text-color: var(--text-faint); // tabs in background (when in other app)
+  --tab-text-color-focused: var(--text-faint); // secondary tabs
   --tab-text-color-focused-active: var(--text-normal);
   --tab-font-size: var(--font-ui-small);
   --tab-font-weight: inherit;

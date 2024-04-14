@@ -24,7 +24,7 @@ body {
   & th,
   td {
     padding: 4px 8px 4px 16px;
-    border: none; // eset borders
+    border: none; // reset borders
 
     .table-single-rows & {
       overflow: hidden;
@@ -75,7 +75,7 @@ body {
   }
 
   & tbody tr {
-    // able body rows
+    // table body rows
     margin: 0;
 
     .table-alternate-row &:nth-child(odd) {

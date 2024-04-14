@@ -423,6 +423,7 @@ input[type="checkbox"][data-task="T"] {
 ————————————————————————————————————————————————————————— */
 
 li[data-task="P"] input[type="checkbox"]:checked,
+li[data-task="P"] input[type="checkbox"]:checked,
 input[type="checkbox"][data-task="P"] {
   &::after {
     background-color: var(--cyan);

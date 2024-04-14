@@ -93,7 +93,7 @@ ul > li.task-list-item[data-task="X"] {
   > ul
   > li
   .list-bullet::after {
-  // vl9
+  // lvl9
   --list-bullet-radius: 0;
 
   border: none;
@@ -103,13 +103,13 @@ ul > li.task-list-item[data-task="X"] {
   transform: var(--list-bullet-transform);
 }
 
-:is(body, .default-marker-even) ul > li > ul > li .list-bullet::after // vl2
+:is(body, .default-marker-even) ul > li > ul > li .list-bullet::after,// lvl2
 :is(body, .default-marker-even) ol > li > ul > li > ul > li .list-bullet::after,
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl4
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl6
-:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after // vl8
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li .list-bullet::after,// lvl4
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,// lvl6
+:is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after,// lvl8
 :is(body, .default-marker-even) ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li > ul > li .list-bullet::after {
-  // vl 10
+  // lvl 10
   --list-bullet-radius: 0;
 
   border: none;

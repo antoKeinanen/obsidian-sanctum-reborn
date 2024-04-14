@@ -14,30 +14,30 @@ body {
 .theme-light.sanctum-white {
   --color-accent-rgb: var(--color-accent-rgb-l);
   --background: rgb(var(--gray-10));
-  --background-hover: rgb(var(--gray-50) 0.12);
-  --background-active: rgb(var(--gray-50) 0.32);
-  --background-selected: rgb(var(--gray-50) 0.2);
-  --background-selected-hover: rgb(var(--gray-50) 0.32);
+  --background-hover: rgba(var(--gray-50), 0.12);
+  --background-active: rgba(var(--gray-50), 0.32);
+  --background-selected: rgba(var(--gray-50), 0.2);
+  --background-selected-hover: rgba(var(--gray-50), 0.32);
   --background-inverse: rgb(var(--gray-80));
-  --background-inverse-hover: rgb(var(--gray-70) 0.5);
+  --background-inverse-hover: rgba(var(--gray-70), 0.5);
   --layer-1: rgb(var(--white));
   --layer-2: rgb(var(--gray-10));
   --layer-hover-1: rgb(var(--gray-10));
-  --layer-hover-2: rgb(var(--gray-20) 0.5);
+  --layer-hover-2: rgba(var(--gray-20), 0.5);
   --layer-active-1: rgb(var(--gray-30));
   --layer-active-2: rgb(var(--gray-30));
   --layer-selected-1: rgb(var(--gray-20));
   --layer-selected-2: rgb(var(--gray-20));
-  --layer-selected-hover-1: rgb(var(--gray-30) 0.5);
-  --layer-selected-hover-2: rgb(var(--gray-30) 0.5);
+  --layer-selected-hover-1: rgba(var(--gray-30), 0.5);
+  --layer-selected-hover-2: rgba(var(--gray-30), 0.5);
   --field-1: rgb(var(--white));
   --field-hover-1: rgb(var(--gray-20));
-  --border-subtle-0: rgb(var(--gray-20)); // aired with background
-  --border-subtle-1: rgb(var(--gray-20)); // aired with layer-1
-  --border-subtle-2: rgb(var(--gray-20)); // aired with layer-2
+  --border-subtle-0: rgb(var(--gray-20)); // paired with background
+  --border-subtle-1: rgb(var(--gray-20)); // paired with layer-1
+  --border-subtle-2: rgb(var(--gray-20)); // paired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-30));
   --border-subtle-selected-2: rgb(var(--gray-30));
-  --border-strong-1: rgb(var(--gray-50)); // or input fields
+  --border-strong-1: rgb(var(--gray-50)); // for input fields
   --border-strong-2: rgb(var(--gray-50));
   --border-inverse: rgb(var(--gray-100));
   --text-code: var(--pink-60);
@@ -52,16 +52,16 @@ body {
   --focus-inset: rgb(var(--white));
   --focus-inverse: rgb(var(--white));
   --interactive: rgb(var(--color-accent-rgb));
-  --highlight: rgb(var(--color-accent-rgb) 0.7);
-  --overlay: rgb(var(--gray-100) 0.5); // ackground overlay
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
+  --overlay: rgba(var(--gray-100), 0.5); // background overlay
 }
 
 .theme-light.sanctum-white {
   --background: rgb(var(--white));
   --layer-1: rgb(var(--gray-10));
   --layer-2: rgb(var(--white));
-  --layer-hover-1: rgb(var(--gray-20) 0.5);
-  --highlight: rgb(var(--color-accent-rgb) 0.7);
+  --layer-hover-1: rgba(var(--gray-20), 0.5);
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
   --field-1: rgb(var(--gray-10));
   --field-hover-1: rgb(var(--white));
 }
@@ -79,30 +79,30 @@ body {
 .theme-dark.sanctum-black {
   --color-accent-rgb: var(--color-accent-rgb-d);
   --background: rgb(var(--gray-100));
-  --background-hover: rgb(var(--gray-50) 0.16);
-  --background-active: rgb(var(--gray-50) 0.4);
-  --background-selected: rgb(var(--gray-50) 0.24);
-  --background-selected-hover: rgb(var(--gray-50) 0.32);
+  --background-hover: rgba(var(--gray-50), 0.16);
+  --background-active: rgba(var(--gray-50), 0.4);
+  --background-selected: rgba(var(--gray-50), 0.24);
+  --background-selected-hover: rgba(var(--gray-50), 0.32);
   --background-inverse: rgb(var(--gray-10));
-  --background-inverse-hover: rgb(var(--gray-20) 0.5);
+  --background-inverse-hover: rgba(var(--gray-20), 0.5);
   --layer-1: rgb(var(--gray-90));
   --layer-2: rgb(var(--gray-80));
-  --layer-hover-1: rgb(var(--gray-80) 0.5);
-  --layer-hover-2: rgb(var(--gray-70) 0.5);
+  --layer-hover-1: rgba(var(--gray-80), 0.5);
+  --layer-hover-2: rgba(var(--gray-70), 0.5);
   --layer-active-1: rgb(var(--gray-70));
   --layer-active-2: rgb(var(--gray-60));
   --layer-selected-1: rgb(var(--gray-80));
   --layer-selected-2: rgb(var(--gray-70));
-  --layer-selected-hover-1: rgb(var(--gray-70) 0.5);
-  --layer-selected-hover-2: rgb(var(--gray-60) 0.5);
+  --layer-selected-hover-1: rgba(var(--gray-70), 0.5);
+  --layer-selected-hover-2: rgba(var(--gray-60), 0.5);
   --field-1: rgb(var(--gray-90));
   --field-hover-1: rgb(var(--gray-80));
-  --border-subtle-0: rgb(var(--gray-80)); // aired with background
-  --border-subtle-1: rgb(var(--gray-80)); // aired with layer-1
-  --border-subtle-2: rgb(var(--gray-70)); // aired with layer-2
+  --border-subtle-0: rgb(var(--gray-80)); // paired with background
+  --border-subtle-1: rgb(var(--gray-80)); // paired with layer-1
+  --border-subtle-2: rgb(var(--gray-70)); // paired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-70));
   --border-subtle-selected-2: rgb(var(--gray-60));
-  --border-strong-1: rgb(var(--gray-60)); // or input fields
+  --border-strong-1: rgb(var(--gray-60)); // for input fields
   --border-strong-2: rgb(var(--gray-50));
   --border-inverse: rgb(var(--gray-10));
   --text-code: var(--pink-50);
@@ -117,8 +117,8 @@ body {
   --focus-inset: rgb(var(--gray-100));
   --focus-inverse: rgb(var(--white));
   --interactive: rgb(var(--color-accent-rgb));
-  --highlight: rgb(var(--color-accent-rgb) 0.7);
-  --overlay: rgb(var(--gray-100) 0.7); // ackground overlay
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
+  --overlay: rgba(var(--gray-100), 0.7); // background overlay
 }
 
 .theme-dark.sanctum-contrast-dark {
@@ -144,14 +144,14 @@ body {
   // --field-1: rgb(var(--gray-80));
   // --field-hover-1: rgb(var(--gray-70));
 
-  // --border-subtle-0: rgb(var(--gray-70)); // aired with background
-  // --border-subtle-1: rgb(var(--gray-70)); // aired with layer-1
-  // --border-subtle-2: rgb(var(--gray-60)); // aired with layer-2
+  // --border-subtle-0: rgb(var(--gray-70)); // paired with background
+  // --border-subtle-1: rgb(var(--gray-70)); // paired with layer-1
+  // --border-subtle-2: rgb(var(--gray-60)); // paired with layer-2
 
   // --border-subtle-selected-1: rgb(var(--gray-60));
   // --border-subtle-selected-2: rgb(var(--gray-50));
 
-  // --border-strong-1: rgb(var(--gray-50)); // or input fields
+  // --border-strong-1: rgb(var(--gray-50)); // for input fields
   // --border-strong-2: rgb(var(--gray-40));
 
   // --border-inverse: rgb(var(--gray-10));
@@ -161,19 +161,19 @@ body {
   --background: rgb(var(--black));
   --layer-1: rgb(var(--gray-100));
   --layer-2: rgb(var(--gray-80));
-  --layer-hover-1: rgb(var(--gray-90) 0.5);
-  --layer-hover-2: rgb(var(--gray-80) 0.5);
+  --layer-hover-1: rgba(var(--gray-90), 0.5);
+  --layer-hover-2: rgba(var(--gray-80), 0.5);
   --layer-active-1: rgb(var(--gray-80));
   --layer-active-2: rgb(var(--gray-70));
   --layer-selected-1: rgb(var(--gray-90));
   --layer-selected-2: rgb(var(--gray-80));
-  --layer-selected-hover-1: rgb(var(--gray-80) 0.5);
-  --layer-selected-hover-2: rgb(var(--gray-70) 0.5);
+  --layer-selected-hover-1: rgba(var(--gray-80), 0.5);
+  --layer-selected-hover-2: rgba(var(--gray-70), 0.5);
   --field-1: rgb(var(--gray-100));
   --field-hover-1: rgb(var(--gray-90));
-  --border-subtle-0: rgb(var(--gray-90)); // aired with background
-  --border-subtle-1: rgb(var(--gray-90)); // aired with layer-1
-  --border-subtle-2: rgb(var(--gray-80)); // aired with layer-2
+  --border-subtle-0: rgb(var(--gray-90)); // paired with background
+  --border-subtle-1: rgb(var(--gray-90)); // paired with layer-1
+  --border-subtle-2: rgb(var(--gray-80)); // paired with layer-2
   --border-subtle-selected-1: rgb(var(--gray-80));
   --border-subtle-selected-2: rgb(var(--gray-70));
   --border-strong-1: rgb(var(--gray-70));
@@ -182,7 +182,7 @@ body {
   --text-primary: rgb(var(--gray-30));
   --text-secondary: rgb(var(--gray-50));
   --text-placeholder: rgb(var(--gray-80));
-  --highlight: rgb(var(--color-accent-rgb) 0.7);
+  --highlight: rgba(var(--color-accent-rgb), 0.7);
 }
 
 /*	General Theme Styling
@@ -194,50 +194,51 @@ body {
   --color-yellow-rgb: 243, 189, 79;
   --text-highlight-bg: var(--highlight);
   --text-highlight-bg-active: var(--highlight);
-  --color-accent: var(--interactive); // inks, footnotes and tags
+  --color-accent: var(--interactive); // links, footnotes and tags
   --color-accent-1: var(
     --interactive
-  ); // ta buttons, active settings tabs, components, resize handles
+  ); // cta buttons, active settings tabs, components, resize handles
 
-  --color-accent-2: var(--interactive); // ccent color on hover
-  --background-primary: var(--background); // ote background
-  --background-primary-alt: var(--layer-1); // ode blocks, blockquotes, yaml
-  --background-secondary: var(--background); // orkspace except note
+  --color-accent-2: var(--interactive); // accent color on hover
+  --background-primary: var(--background); // note background
+  --background-primary-alt: var(--layer-1); // code blocks, blockquotes, yaml
+  --background-secondary: var(--background); // workspace except note
   --background-secondary-alt: var(
     --background
   ); // tab-header (top bar) & titlebar
 
   --background-modifier-hover: var(
     --background-hover
-  ); // ctive Tab Headers and Nav File
+  ); // active Tab Headers and Nav File
 
-  --background-modifier-active-hover: rgb(
-    var(--color-accent-rgb) 0.15
-  ); // ollapsed lists indicator
+  --background-modifier-active-hover: rgba(
+    var(--color-accent-rgb),
+    0.15
+  ); // collapsed lists indicator
 
-  --background-modifier-border: var(--border-subtle-0); // orders
+  --background-modifier-border: var(--border-subtle-0); // borders
   --background-modifier-border-hover: var(
     --border-subtle-1
-  ); // omponent details and borders
+  ); // component details and borders
 
-  --background-modifier-border-focus: var(--focus); // lement/component focus
+  --background-modifier-border-focus: var(--focus); // element/component focus
   --background-modifier-error-rgb: var(--color-red-rgb);
   --background-modifier-error: var(--red);
   --background-modifier-error-hover: var(--red);
   --background-modifier-success-rgb: var(--color-green-rgb);
   --background-modifier-success: var(--green);
-  --background-modifier-message: var(--layer-1); // otice & tooltip color
-  --background-modifier-form-field: var(--field-1); // ext inputs
-  --text-normal: var(--text-primary); // ain note text
+  --background-modifier-message: var(--layer-1); // notice & tooltip color
+  --background-modifier-form-field: var(--field-1); // text inputs
+  --text-normal: var(--text-primary); // main note text
   --text-muted: var(--text-secondary); // :not(:active) icons and sidebar text
   --text-faint: var(
     --text-placeholder
   ); // comments, collapse indicators & markers, input placeholders, settings group titles
 
-  --text-on-accent: rgb(var(--white)); // ext of active/alert areas
+  --text-on-accent: rgb(var(--white)); // text of active/alert areas
   --text-error: var(--red);
   --text-success: var(--green);
-  --text-selection: rgb(var(--color-accent-rgb) 0.5); // selection color
+  --text-selection: rgba(var(--color-accent-rgb), 0.5); // selection color
 }
 
 body {

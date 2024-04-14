@@ -15,8 +15,8 @@ body {
 
 .callout {
   border: var(--callout-border-width) solid
-    rgb(var(--callout-color) var(--callout-border-opacity));
-  background-color: rgb(var(--callout-color) 0.2);
+    rgba(var(--callout-color), var(--callout-border-opacity));
+  background-color: rgba(var(--callout-color), 0.2);
   padding: 16px 12px;
 
   & .callout-icon {
@@ -266,7 +266,7 @@ body {
 ————————————————————————————————————————————————————————— */
 
 .callout.is-collapsible .callout-fold svg.lucide-chevron-down {
-  transform: scaleY(-1); // irrors the svg
+  transform: scaleY(-1); // mirrors the svg
 }
 
 .callout.is-collapsed .callout-fold svg.lucide-chevron-down {
@@ -275,6 +275,6 @@ body {
 
 .callout-title {
   .callout-title-inner {
-    flex-grow: 1; // xpands the title and forces the fold to go to the right
+    flex-grow: 1; // expands the title and forces the fold to go to the right
   }
 }

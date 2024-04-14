@@ -33,7 +33,7 @@ input[type="number"] {
     border-bottom-color: var(--background-modifier-border-focus);
 
     &:placeholder-shown {
-      // hen starting to type, this will disappear
+      // when starting to type, this will disappear
       box-shadow:
         0 0 0 0 var(--background-primary),
         0 0 0 2px var(--background-modifier-border-focus);
