@@ -37,22 +37,45 @@ body {
 
 /*	Emphasis
 ————————————————————————————————————————————————————————— */
-body {
-  /* Bold */
-  --bold-weight: var(--font-semibold);
-  --bold-color: inherit;
-
-  /* Italic */
-  --italic-color: inherit;
-}
 
 /* Highlight */
 .search-result-file-matched-text, // search results
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-highlight {
+  color: var(--text-normal);
   padding: 2px 4px;
-  border-radius: var(--radius-s);
-  box-decoration-break: clone;
+  background: linear-gradient(
+    to right,
+    var(--highlight-color),
+    var(--highlight-color)
+  );
+  background-size:
+    100% 5px,
+    0 5px;
+  background-position:
+    100% 100%,
+    0 100%;
+  background-repeat: no-repeat;
+  transition: background-size, 400ms;
+
+  &:hover {
+    color: var(--background-secondary);
+    background-size:
+      100% 100%,
+      0 0.1em;
+  }
+}
+
+.cm-highlight {
+  --highlight-color: var(--yellow);
+}
+
+.cm-em {
+  --highlight-color: var(--blue);
+}
+
+.cm-strong {
+  --highlight-color: var(--pink);
 }
 
 /*	Horizontal Rule
