@@ -23,6 +23,10 @@
 
 body {
   --code-normal-inline: var(--pink);
+
+  .cm-inline-code {
+    --code-normal: var(--pink);
+  }
 }
 
 .markdown-rendered code:not(pre code) {
