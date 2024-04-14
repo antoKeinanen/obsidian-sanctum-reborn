@@ -1,6 +1,9 @@
 {
-  "name": "obsidian-sanctum",
+  "name": "obsidian-sanctum-reborn",
   "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/antoKeinanen/obsidian-sanctum-reborn"
+  },
   "description": "A minimalist theme for creating a serene space of retreat, for thought and uninterrupted work.",
   "main": "index.js",
   "scripts": {
@@ -16,6 +19,12 @@
     "obsidianmd"
   ],
   "author": "jdanielmourao",
+  "contributors": [
+    {
+      "name": "antoKeinanen",
+      "url": "https://github.com/antoKeinanen"
+    }
+  ],
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^7.1.1",
