@@ -27,6 +27,10 @@
   }
 }
 
+.kanban-plugin__lane-action-add {
+  color: var(--normal-text);
+}
+
 .kanban-plugin__lane-header-wrapper {
   padding: 0 8px;
   border-bottom: none;
@@ -165,7 +169,7 @@ body:is(.is-focused, :not(.is-focused))
     }
   }
 
-  .view-actions {
+  .view-s {
     position: unset;
     margin-top: unset;
   }
