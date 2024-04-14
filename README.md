@@ -1,4 +1,7 @@
-## Sanctum 1.0 for Obsidian 0.16
+## Sanctum Reborn
+
+> [!NOTE]  
+> This is a fork from [jdanielmourao/obsidian-sanctum](https://github.com/jdanielmourao/obsidian-sanctum) as the original maintainer has gone inactive.
 
 ### Disclaimer for Sanctum Users
 
