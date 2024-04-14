@@ -5,8 +5,6 @@
 
 Sanctum’s a minimalist theme for creating a serene space of retreat, for thought and uninterrupted work.
 
-
-
 ![sanctum-readme-title](https://user-images.githubusercontent.com/91087143/136701698-2464f5d0-30d5-4ee5-9261-4cca96448192.png)
 
 ## Installation
@@ -50,18 +48,22 @@ The following theme significantly alters Obsidian's original css, and so is pron
 ## Showcase
 
 ### Edit mode
+
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/edit-dark.png?raw=true)
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/edit-light.png?raw=true)
 
 ### Preview mode
+
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/preview-dark.png?raw=true)
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/preview-light.png?raw=true)
 
 ### Modals
+
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/modal-dark.png?raw=true)
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/modal-light.png?raw=true)
 
 ### Prompt
+
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/prompt-dark.png?raw=true)
 ![](https://github.com/antoKeinanen/obsidian-sanctum-reborn/blob/main/assets/prompt-light.png?raw=true)
 
@@ -100,7 +102,6 @@ The following theme significantly alters Obsidian's original css, and so is pron
 
 ## Feedback & Contributions
 
-If you encounter an issue, or would like to contribute to this theme, don't hesitate to submit an issue or raise a PR. 
+If you encounter an issue, or would like to contribute to this theme, don't hesitate to submit an issue or raise a PR.
 
-
-You can also message the current maintainer on [Discord](https://discord.com/invite/veuWUTm) `@anto.k`. Or the original author on [Discord](https://discord.com/invite/veuWUTm) `@jdaniel` or on the [Obsidian Forums](https://forum.obsidian.md/u/jdanielmourao/summary). 
+You can also message the current maintainer on [Discord](https://discord.com/invite/veuWUTm) `@anto.k`. Or the original author on [Discord](https://discord.com/invite/veuWUTm) `@jdaniel` or on the [Obsidian Forums](https://forum.obsidian.md/u/jdanielmourao/summary).
