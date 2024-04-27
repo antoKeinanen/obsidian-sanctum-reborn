@@ -1,4 +1,4 @@
 {
-  "*.scss": ["prettier --check", "stylelint --allow-empty-input"],
-  "*.css": ["prettier --check", "stylelint  --allow-empty-input"]
+  "*.scss": ["prettier --check", "stylelint"],
+  "*.css": ["prettier --check", "stylelint"]
 }
