@@ -73,7 +73,7 @@ settings:
 			-
 				label: 'Yellow'
 				value: '243, 189, 79'
-	-			
+	-		
 		id: color-accent-rgb-d
 		title: Accent color dark mode
 		type: variable-select
@@ -109,6 +109,19 @@ settings:
 			-
 				label: 'Yellow'
 				value: '243, 189, 79'
+	-
+		id: use-custom-accent
+		title: Use custom accent color
+		default: false
+		type: class-toggle
+	-
+		id: custom-accent-color
+		title: Custom accent
+		type: variable-color
+		opacity: false
+		description: To use this make sure 'Use custom accent color' is checked
+		format: rgb-values
+		default: '#'
 	-
 		id: font-editor-theme
 		title: Editor font

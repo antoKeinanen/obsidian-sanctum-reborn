@@ -3,6 +3,7 @@
 body {
   --color-accent-rgb-l: 246, 141, 69;
   --color-accent-rgb-d: 102, 153, 97;
+  --custom-accent-color: 102, 153, 97;
 }
 
 /*	Sanctum Light Themes (Default, Contrast & White)
@@ -12,7 +13,12 @@ body {
 .theme-light.sanctum-default-light,
 .theme-light.sanctum-contrast-light,
 .theme-light.sanctum-white {
-  --color-accent-rgb: var(--color-accent-rgb-l);
+  --color-accent-rgb: var(--custom-accent-color);
+
+  &:not(.use-custom-accent) {
+    --color-accent-rgb: var(--color-accent-rgb-l);
+  }
+
   --background: rgb(var(--gray-10));
   --background-hover: rgba(var(--gray-50), 0.12);
   --background-active: rgba(var(--gray-50), 0.32);
@@ -77,7 +83,12 @@ body {
 .theme-dark.sanctum-default-dark,
 .theme-dark.sanctum-contrast-dark,
 .theme-dark.sanctum-black {
-  --color-accent-rgb: var(--color-accent-rgb-d);
+  --color-accent-rgb: var(--custom-accent-color);
+
+  &:not(.use-custom-accent) {
+    --color-accent-rgb: var(--color-accent-rgb-d);
+  }
+
   --background: rgb(var(--gray-100));
   --background-hover: rgba(var(--gray-50), 0.16);
   --background-active: rgba(var(--gray-50), 0.4);
