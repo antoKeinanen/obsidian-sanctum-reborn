@@ -22,6 +22,7 @@ button {
 
   &.mod-cta {
     background-color: rgb(var(--color-accent-rgb) 1);
+    color: rgb(var(--text-muted) 1);
 
     &:hover {
       filter: brightness(0.95);
